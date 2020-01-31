@@ -32,7 +32,10 @@ module.exports = {
                 avatar_url,
                 bio,
                 techs: techsArray,
-                location,
+                location: {
+                    type: 'Point',
+                    coordinates: [longitude, latitude]
+                }
             });
         }
 
